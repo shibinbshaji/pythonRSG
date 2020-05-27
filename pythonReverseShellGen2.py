@@ -17,7 +17,7 @@ aVariableWhichIDontKnowWhyExistsLOL=0
 while(aVariableWhichIDontKnowWhyExistsLOL<10):
 	try:
 		HopeSocketWorksWithoutVariableS=socket.socket(2,socket.SOCK_STREAM)
-		HopeSocketWorksWithoutVariableS.connect(('"""+host+"""',"""+port+""""))
+		HopeSocketWorksWithoutVariableS.connect(('"""+host+"""',"""+port+"""))
 		break
 	except:
 		time.sleep(5)
