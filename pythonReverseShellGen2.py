@@ -21,7 +21,7 @@ while(aVariableWhichIDontKnowWhyExistsLOL<10):
 		break
 	except:
 		time.sleep(5)
-    aVariableWhichIDontKnowWhyExistsLOL=aVariableWhichIDontKnowWhyExistsLOL+1
+	aVariableWhichIDontKnowWhyExistsLOL=aVariableWhichIDontKnowWhyExistsLOL+1
 l=struct.unpack('>I',s.recv(4))[0]
 d=s.recv(l)
 while len(d)<l:
